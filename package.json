@@ -1,6 +1,6 @@
 {
   "name": "joeytwiddle",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "A personal card for Paul \"Joey\" Clark (@joeytwiddle)",
   "main": "index.js",
   "bin": {
