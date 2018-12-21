@@ -13,22 +13,22 @@ let options = {
 }
 // Text + chalk definitions
 let data = {
-  'name': chalk.white('Paul "Joey" Clark /'),
-  'handle': chalk.yellow('joeytwiddle'),
-  'work': chalk.white('Javascript Developer'),
-  'twitter': chalk.cyan('https://twitter.com/joeytwiddle'),
-  'dwitter': chalk.cyan('https://dwitter.com/u/joeytwiddle'),
-  'github': chalk.cyan('https://github.com/joeytwiddle'),
-  'linkedin': chalk.cyan('https://www.linkedin.com/in/pauljoeyclark'),
-  'web': chalk.cyan('https://hwi.ath.cx'),
+  'name': chalk.white.bold('Paul "Joey" Clark /'),
+  'handle': chalk.green.bold('joeytwiddle'),
+  'work': chalk.white.bold('Javascript developer, FOSS enthusiast'),
+  'twitter': chalk.blue.bold('https://twitter.com/joeytwiddle'),
+  'dwitter': chalk.blue.bold('https://dwitter.com/u/joeytwiddle'),
+  'github': chalk.blue.bold('https://github.com/joeytwiddle'),
+  'linkedin': chalk.blue.bold('https://www.linkedin.com/in/pauljoeyclark'),
+  'web': chalk.blue.bold('https://hwi.ath.cx'),
   'npx': chalk.white('npx joeytwiddle'),
-  'labelWork': chalk.white.bold('      Work:'),
-  'labelTwitter': chalk.white.bold('   Twitter:'),
-  'labelDwitter': chalk.white.bold('   Dwitter:'),
-  'labelGitHub': chalk.white.bold('    GitHub:'),
-  'labelLinkedIn': chalk.white.bold('  LinkedIn:'),
-  'labelWeb': chalk.white.bold('       Web:'),
-  'labelCard': chalk.white.bold('      Card:')
+  'labelWork': chalk.white('      Work:'),
+  'labelTwitter': chalk.white('   Twitter:'),
+  'labelDwitter': chalk.white('   Dwitter:'),
+  'labelGitHub': chalk.white('    GitHub:'),
+  'labelLinkedIn': chalk.white('  LinkedIn:'),
+  'labelWeb': chalk.white('       Web:'),
+  'labelCard': chalk.white('      Card:')
 }
 
 // Actual strings we're going to output
@@ -45,4 +45,4 @@ var carding = `${data.labelCard}  ${data.npx}`
 // Put all our output together into a single variable so we can use boxen effectively
 let output = heading + newline + newline + working + newline + twittering + newline + dwittering + newline + githubing + newline + linkedining + newline + newline + carding
 
-console.log(chalk.green(boxen(output, options)))
+console.log(chalk.white(boxen(output, options)))
