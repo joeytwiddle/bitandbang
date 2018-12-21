@@ -36,13 +36,13 @@ var newline = '\n'
 var heading = `${data.name} ${data.handle}`
 var working = `${data.labelWork}  ${data.work}`
 var twittering = `${data.labelTwitter}  ${data.twitter}`
+var dwittering = `${data.labelDwitter}  ${data.dwitter}`
 var githubing = `${data.labelGitHub}  ${data.github}`
 var linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
 // var webing = `${data.labelWeb}  ${data.web}`
-var webing = ''
 var carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
-let output = heading + newline + newline + working + newline + twittering + newline + githubing + newline + linkedining + newline + webing + newline + newline + carding
+let output = heading + newline + newline + working + newline + twittering + newline + dwittering + newline + githubing + newline + linkedining + newline + newline + carding
 
 console.log(chalk.green(boxen(output, options)))
