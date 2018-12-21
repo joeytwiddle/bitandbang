@@ -13,16 +13,18 @@ let options = {
 }
 // Text + chalk definitions
 let data = {
-  'name': chalk.white('Tierney Cyren /'),
-  'handle': chalk.cyan('bitandbang'),
-  'work': chalk.white('Senior Cloud Developer Advocate at Microsoft'),
-  'twitter': chalk.cyan('https://twitter.com/bitandbang'),
-  'github': chalk.cyan('https://github.com/bnb'),
-  'linkedin': chalk.cyan('https://linkedin.com/in/bitandbang'),
-  'web': chalk.cyan('https://bnb.im'),
-  'npx': chalk.white('npx bitandbang'),
+  'name': chalk.white('Paul "Joey" Clark /'),
+  'handle': chalk.yellow('joeytwiddle'),
+  'work': chalk.white('Javascript Developer'),
+  'twitter': chalk.cyan('https://twitter.com/joeytwiddle'),
+  'dwitter': chalk.cyan('https://dwitter.com/u/joeytwiddle'),
+  'github': chalk.cyan('https://github.com/joeytwiddle'),
+  'linkedin': chalk.cyan('https://www.linkedin.com/in/pauljoeyclark'),
+  'web': chalk.cyan('https://hwi.ath.cx'),
+  'npx': chalk.white('npx joeytwiddle'),
   'labelWork': chalk.white.bold('      Work:'),
   'labelTwitter': chalk.white.bold('   Twitter:'),
+  'labelDwitter': chalk.white.bold('   Dwitter:'),
   'labelGitHub': chalk.white.bold('    GitHub:'),
   'labelLinkedIn': chalk.white.bold('  LinkedIn:'),
   'labelWeb': chalk.white.bold('       Web:'),
@@ -36,7 +38,8 @@ var working = `${data.labelWork}  ${data.work}`
 var twittering = `${data.labelTwitter}  ${data.twitter}`
 var githubing = `${data.labelGitHub}  ${data.github}`
 var linkedining = `${data.labelLinkedIn}  ${data.linkedin}`
-var webing = `${data.labelWeb}  ${data.web}`
+// var webing = `${data.labelWeb}  ${data.web}`
+var webing = ''
 var carding = `${data.labelCard}  ${data.npx}`
 
 // Put all our output together into a single variable so we can use boxen effectively
